@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'cormorantlight';
+    src: url('Cormorant-Light-webfont.woff') format('woff'),
+         url('Cormorant-Light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

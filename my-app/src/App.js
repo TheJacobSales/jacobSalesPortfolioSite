@@ -1,4 +1,7 @@
 import './globals.css'
+import './fonts/cormorant_medium_macroman/stylesheet.css'
+import './fonts/cormorant_light_macroman/stylesheet.css'
+import './fonts/dejavusans_bold_macroman/stylesheet.css'
 import Layout from './components/layout/Layout';
 import Carousel, {CarouselItem} from './components/carousel/Carousel';
 
@@ -8,8 +11,8 @@ function App() {
       <section id="landing" className='section-landing'>
         <section className='left-section'>
           <div className='div-headers'>
-            <h1>Hi my name is,</h1>
-            <h2>Jacob Sales</h2>
+            <h1 >Hi my name is,</h1>
+            <h2 className='big-heading'>Jacob Sales</h2>
           </div>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae fugiat, eum optio necessitatibus minima beatae quaerat dicta possimus ex officia! Numquam odit voluptas architecto expedita sint dolorem, magni commodi quae?</p>
           {/* <div>Dice Roller</div> */}

@@ -2,6 +2,16 @@
     --primary-color: #4630cf;
     --secondary-color : #306acf;
     --tertiary-color : #30b9cf;
+    --font-sans: "dejavu_sansbold", Tahoma ,sans-serif;
+    --font-serif: "cormorantmedium", Garamond, serif;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -44,7 +54,11 @@ a {
 .header {
     display: flex;
     align-items: center;
-    height: 80px;
+}
+
+.big-heading {
+   margin: 0;
+   font-size: clamp(40px, 8vw, 70px);
 }
 
 .nav-bar {
@@ -59,6 +73,7 @@ a {
     top: 0;
     transition: "top 0.6s";
     padding: 0px 20px;
+    animation: fade 0.3s ease-in;
 }
 
 .nav-bar a {
@@ -106,6 +121,8 @@ a {
     flex-wrap: wrap;
     gap: 20px;
     color: white;
+    font-family: var(--font-sans);
+    font-size: var(--fz-sm);
  }
 
  .nav-links {
@@ -115,6 +132,8 @@ a {
     flex-wrap: wrap;
     gap: 20px;
     color: white;
+    font-family: var(--font-serif);
+    font-size: var(--fz-lg);
  }
 
  .nav-link-animate {
@@ -135,6 +154,8 @@ a {
     gap: 5px;
     width: 50%;
     padding: 5%;
+    font-size: var(--fz-xl);
+    font-family: var(--font-serif);
  }
 
  .section-landing .right-section {
@@ -143,7 +164,6 @@ a {
     flex-wrap: wrap;
     /* justify-content: center; */
     width: 50%;
-    
  }
 
 .section-landing .div-headers {
@@ -152,16 +172,13 @@ a {
    background-color: var(--primary-color);
    border-radius: 30px;
    width: fit-content;
-   padding: 10px 40px;
+   padding: 20px 40px;
+   font-family: var(--font-sans);
+   color: white;
 }
 
  .section-landing h1 {
     font-size: 16;
-    color: white;
- }
-
- .section-landing h2 {
-    font-size: x-large;
     color: white;
  }
  
@@ -172,16 +189,26 @@ a {
  .carousel {
    overflow: hidden;
    position: relative;
+   margin: 0;
  }
 
- .carousel-control .left-button{
+ .carousel-button-decor{
+   opacity: 50%;
+   text-decoration: none;
+   border: none;
+   cursor: pointer;
+   text-align: center;
+   background-color: transparent;
+   font-size: 56px;
+ }
+
+ .carousel-control .left-button-pos{
    position: absolute;
    top: 50%;
    left: 15px;
-   opacity: 50;
  }
 
- .carousel-control .right-button{
+ .carousel-control .right-button-pos{
    position: absolute;
    top: 50%;
    right: 15px;
@@ -196,7 +223,7 @@ a {
    display: inline-flex;
    align-items: center;
    justify-content: center;
-   height: 200px;
+   height: 100vh;
    color: #fff;
    background-color: var(--secondary-color);
  }

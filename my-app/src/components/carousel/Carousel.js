@@ -22,10 +22,10 @@ const Carousel = ({ children }) => {
             })}
         </div>
         <div className="carousel-control">
-            <button className="left-button" onClick={() => { updateIndex(activeIndex - 1)}}>
+            <button className="left-button-pos carousel-button-decor" onClick={() => { updateIndex(activeIndex - 1)}}>
                 <FaAngleLeft />
             </button>
-            <button className="right-button" onClick={() => { updateIndex(activeIndex + 1)}}>
+            <button className="right-button-pos carousel-button-decor" onClick={() => { updateIndex(activeIndex + 1)}}>
                 <FaAngleRight />
             </button>
         </div>
