@@ -1,0 +1,10 @@
+@import './animation.css';
+
+.section-about {
+    font-family: var(--font-serif);
+    color: var(--secondary-color);
+}
+
+.section-about .right-section p, h1 {
+    animation: fade 1000ms, slide-left 500ms;
+}

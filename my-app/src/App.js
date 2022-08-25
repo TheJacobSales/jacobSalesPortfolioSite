@@ -1,6 +1,7 @@
 import './globals.css'
 import './landing.css'
 import './navbar.css'
+import './about.css'
 import './fonts/cormorant_medium_macroman/stylesheet.css'
 import './fonts/cormorant_light_macroman/stylesheet.css'
 import './fonts/dejavusans_bold_macroman/stylesheet.css'
