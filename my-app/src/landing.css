@@ -1,0 +1,109 @@
+@import 'animation.css';
+
+.big-heading {
+    margin: 0;
+    font-size: clamp(40px, 8vw, 70px);
+ }
+ 
+  .section-landing {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     min-height: 100vh;
+  }
+ 
+  .section-landing .left-section {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+     gap: 5px;
+     width: 50%;
+     font-size: var(--fz-xl);
+     font-family: var(--font-serif);
+  }
+
+  .section-landing .div-headers {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    width: fit-content;
+    padding: 20px 40px;
+    font-family: var(--font-sans);
+    text-align: left;
+    color: white;
+    animation: slide-left 500ms ease-out, fade 750ms;
+ }
+ .section-landing .left-section p {
+  animation: slide-left 500ms ease-out, fade 750ms;
+ }
+  .section-landing .right-section {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     /* justify-content: center; */
+     width: 50%;
+  }
+ 
+  .section-landing h1 {
+     font-size: 16;
+     color: white;
+  }
+  
+  .section-landing img {
+     align-self: center;
+  }
+ 
+  .carousel {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+ 
+  .carousel-button-decor{
+    opacity: 50%;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+    font-size: 56px;
+  }
+ 
+  .carousel-control .left-button-pos{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+  }
+ 
+  .carousel-control .right-button-pos{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+  }
+ 
+  .inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+  }
+ 
+  .carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    background-color: var(--secondary-color);
+  }
+
+  @media screen and (max-width: 1024px) {
+    .section-landing {
+        flex-direction: column;
+    }
+    .section-landing .left-section, .section-landing .right-section {
+        width: 100vw;
+    }
+}
